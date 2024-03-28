@@ -1,0 +1,206 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/**********************************************BARRA DE NAVEGAÇÃO****************************************/
+.navbar-brand {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**********************************************CONTEUDO DO SITE******************************************/
+
+main {
+  padding: 10px;
+  display: flex;
+  background: url(/img/fundo.jpg) fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.opcao img {
+  width: 250px;
+  height: 200px;
+}
+
+.conteudo h3 {
+  color: #0a950a;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.conteudo div:hover {
+  background-color: #acacacd2;
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.conteudo div {
+  width: auto;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.opcao {
+  list-style: none;
+  opacity: 0.9;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+/**********************************************BARRA LATERAL******************************************/
+
+.sidebar {
+  background-color: #f8f9fa;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  /* Adiciona uma barra de rolagem vertical caso o conteúdo exceda a altura da barra lateral */
+  padding-top: 20px;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  padding: 10px 20px;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.sidebar-nav li a:hover {
+  background-color: #e9ecef;
+}
+
+
+.footer {
+  display: flex;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  padding: 10px;
+  float: inline-end;
+  width: 100%;
+}
+
+/***************************************AJUSTES DISPOSITIVOS MOBILE***************************************/
+@media (min-width: 669px) and (max-width: 1168px){
+  .conteudo {
+    width: auto;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    background-position: 800px;
+  }
+
+  .conteudo div {
+    right: auto;
+    width: 220px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .opcao img { 
+    width: 170px;
+    height: 140px; 
+  }
+
+  .conteudo h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+  }
+
+  .conteudo div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-family: monospace;
+  }
+
+}
+
+@media (max-width: 668px) {
+
+
+  .conteudo {
+    width: auto;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    background-position: 800px;
+  }
+
+  .conteudo div {
+    right: auto;
+    width: 250px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .opcao img { 
+    width: 170px;
+    height: 140px; 
+  }
+
+  .conteudo h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+  }
+
+  .conteudo div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+    font-style: normal;
+    font-family: monospace;
+  }
+
+  .sidebar,
+  .col-4,
+  .sidebar-nav {
+    display: none;
+  }
+
+  /**********************************************RODAPÉ******************************************/
+  footer {
+    font-size: small;
+  }
+
+}
